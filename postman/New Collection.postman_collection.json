@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "854bfc7d-0fa3-4945-ace4-77589040dd19",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28705855"
+	},
+	"item": [
+		{
+			"name": "postman",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", ()=>{\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}q=Chennai&appid={{key}}"
+			},
+			"response": []
+		}
+	]
+}
